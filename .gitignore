@@ -4,7 +4,8 @@
 /storage/*.key
 /vendor
 .env
-.env.backup
+.env.*
+!.env.example
 .phpunit.result.cache
 docker-compose.override.yml
 Homestead.json
@@ -13,3 +14,19 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/.rnd
+
+# Laravel generated files. Keep directory placeholders.
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+!/storage/framework/cache/data/
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
